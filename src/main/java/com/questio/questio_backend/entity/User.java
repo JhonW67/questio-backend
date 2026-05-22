@@ -44,6 +44,7 @@ public class User implements UserDetails {
     private String tipoUsuario;
 
     @Column(name = "termo_aceito", nullable = false)
+    @Builder.Default
     private Boolean termoAceito = false;
 
     @Builder.Default
@@ -74,6 +75,7 @@ public class User implements UserDetails {
     private LocalDateTime ultimoCheckinEm;
 
     @Column(name = "email_verificado", nullable = false)
+    @Builder.Default
     private Boolean emailVerificado = false;
 
     @Builder.Default
