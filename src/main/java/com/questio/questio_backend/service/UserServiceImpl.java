@@ -58,6 +58,7 @@ public class UserServiceImpl implements  UserService{
                 .curso(request.curso())
                 .tipoUsuario(tipo.getValor())
                 .termoAceito(true)
+                .emailVerificado(false)
                 .xpTotal(0)
                 .nivel(1)
                 .streakAtual(0)
